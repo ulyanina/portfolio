@@ -1,0 +1,17 @@
+@font-face {
+   font-family: "ElMessiri";
+   src: url("../fonts/ElMessiri-Medium.eot");
+   src: url("../fonts/ElMessiri-Medium.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/ElMessiri-Medium.woff") format("woff"), url("../fonts/ElMessiri-Medium.ttf") format("truetype");
+   font-weight: 500;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "ElMessiri";
+   src: url("../fonts/ElMessiri-Bold.eot");
+   src: url("../fonts/ElMessiri-Bold.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/ElMessiri-Bold.woff") format("woff"), url("../fonts/ElMessiri-Bold.ttf") format("truetype");
+   font-weight: 700;
+   font-style: normal;
+}
