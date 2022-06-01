@@ -5,6 +5,27 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon/apple-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon/apple-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="icons/favicon/apple-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon/apple-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="icons/favicon/apple-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon/apple-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="icons/favicon/apple-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon/apple-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-icon-180x180.png">
+   <link rel="icon" type="image/png" sizes="192x192" href="icons/favicon/android-icon-192x192.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon/favicon-96x96.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
+   <link rel="manifest" href="/manifest.json">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
+   <link rel="manifest" href="/manifest.json">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
    <title>Ulyanina</title>
    <link rel="stylesheet" href="css/fonts.css">
    <link rel="stylesheet" href="css/null.css">
@@ -13,7 +34,33 @@
 
 <body>
    <div class="wrapper">
-
+      <aside class="sidepanel">
+         <span>Социальные сети</span>
+         <div class="sidepanel__divider"></div>
+         <a href="#" class="sidepanel__link"><img src="icons/sidepanel/Github.svg" alt="github"></a>
+         <a href="#" class="sidepanel__link"><img src="icons/sidepanel/vk.svg" alt="vk"></a>
+         <a href="#" class="sidepanel__link"><img src="icons/sidepanel/Telegram.svg" alt="telegram"></a>
+      </aside>
+      <div class="menu">
+         <div class="menu__block">
+            <div class="menu__close">&times;</div>
+            <nav>
+               <ul class="menu__list">
+                  <li class="menu__link"><a href="#">ПРО МЕНЯ</a></li>
+                  <li class="menu__link"><a href="#">МОЙ ОПЫТ</a></li>
+                  <li class="menu__link"><a href="#">МОИ НАВЫКИ</a></li>
+                  <li class="menu__link"><a href="#">МОИ РАБОТЫ</a></li>
+                  <li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
+               </ul>
+            </nav>
+            <div class="menu__footer">
+               <a href="#"><img src="icons/sidepanel/Github.svg" alt="github"></a>
+               <a href="#"><img src="icons/sidepanel/vk.svg" alt="vk"></a>
+               <a href="#"><img src="icons/sidepanel/Telegram.svg" alt="telegram"></a>
+            </div>
+         </div>
+         <div class="menu__overlay"></div>
+      </div>
       <section class="presentation">
          <div class="humburger">
             <span></span>
@@ -40,7 +87,8 @@
             </div>
          </div>
       </section>
-
+   </div>
+   <script src="js/script.js"></script>
 </body>
 
 </html>
