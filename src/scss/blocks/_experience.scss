@@ -1,0 +1,132 @@
+.experience {
+   min-height: 660px;
+   padding-bottom: 120px;
+
+   &__suptitle-before {
+      text-align: center;
+   }
+   &__suptitle {
+      position: relative;
+      margin-bottom: 16px;
+      font-size: 17px;
+      font-weight: 700;
+      @include before-circle;
+      &::before {
+         top: -7px;
+         left: 50%;
+         transform: translateX(-50%);
+         width: 25px;
+         height: 25px;
+      }
+   }
+   &__title {
+      margin-bottom: 30px;
+   }
+   &__divider {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: 60px;
+   }
+
+   &__row {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(300px, 493px));
+      grid-template-rows: minmax(378px, auto);
+      column-gap: 180px;
+   }
+   &__study,
+   &__work {
+     
+      ul {
+         display: grid;
+         row-gap: 45px;
+      }
+      padding-left: 115px;
+   }
+}
+.resume {
+   &__item {
+      display: grid;
+      grid-template-columns: minmax(250px, 375px);
+      grid-template-rows: minmax(40px, 50px) minmax(78px, auto);
+      position: relative;
+      &::before {
+         content: "";
+         position: absolute;
+         width: 39px;
+         height: 1px;
+         left: -38px;
+         top: 12px;
+         background-color: #000;
+      }
+   }
+   &__icon {
+      position: relative;
+      img {
+         position: absolute;
+         bottom: 17px;
+         right: 7px;
+         max-width: 25px;
+         max-height: 25px;
+      }
+      @include before-circle;
+      &::before {
+         top: -6px;
+      }
+   }
+   &__name {
+      padding-left: 10px;
+   }
+   &__title {
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 6px;
+   }
+   &__subtitle {
+      font-weight: 500;
+      font-size: 12px;
+   }
+
+   &__item-body {
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 18px;
+   }
+}
+.study__title,
+.work__title {
+   position: relative;
+   font-weight: 700;
+   font-size: 20px;
+   margin-bottom: 45px;
+   &::before {
+      content: "";
+      position: absolute;
+      left: -45px;
+      top: 0;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: $color-red;
+   }
+}
+
+.resume__item-head {
+   display: grid;
+   grid-template-columns: 50px 325px;
+   grid-template-rows: 50px;
+}
+.study,
+.work {
+   position: relative;
+   &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: calc(100% - 15px);
+      background-color: #000;
+      left: 77px;
+      top: 15px;
+   }
+}
