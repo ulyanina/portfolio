@@ -70,16 +70,16 @@
          <div class="container">
             <div class="presentation__row ">
                <div class="presentation__text">
-                  <h2><span>
-                        Ме</span>ня зовут Александра Смит</h2>
-                  <h1>Я web-разработчик <br>
+                  <h1><span>
+                        Ме</span>ня зовут Александра Смит</h1>
+                  <h2>Я web-разработчик <br>
                      из города Москва</h2>
-                     <div class="presentation__buttons">
-                        <button class="presentation__button-active"><a class="presentation__buttons-left"
-                              href="#">Портфолио</a></button>
-                        <button class="presentation__button"><a class=" presentation__buttons-right" href="#about">Про
-                              меня</a></button>
-                     </div>
+                  <div class="presentation__buttons">
+                     <button class="presentation__button-active"><a class="presentation__buttons-left"
+                           href="#">Портфолио</a></button>
+                     <button class="presentation__button"><a class=" presentation__buttons-right" href="#about">Про
+                           меня</a></button>
+                  </div>
                </div>
                <div class="presentation__img">
                   <img src="img/presentation/me-photo.png" alt="me-photo">
@@ -143,15 +143,13 @@
                      </div>
                   </div>
                </div>
-               <!-- </div> -->
-
             </div>
          </div>
       </section>
       <section class="experience">
          <div class="container">
             <div class="experience__suptitle-before">
-               <h2 class="experience__suptitle suptitle">Опыт</h2>
+               <h1 class="experience__suptitle suptitle">Опыт</h1>
                <div class="experience__title title">Чем я буду полезна</div>
                <div class="experience__divider divider"></div>
             </div>
@@ -218,7 +216,108 @@
             </div>
          </div>
       </section>
-      <section class="skills"></section>
+      <section class="skills">
+         <div class="container">
+            <div class="experience__suptitle-before">
+               <h1 class="experience__suptitle suptitle">Навыки</h1>
+               <div class="experience__title title">Что я использую в работе</div>
+               <div class="experience__divider divider"></div>
+            </div>
+            <div class="skills__row">
+               <div class="skills__item html">
+                  <div class="skills__item__icon"><img src="icons/skills/html5.svg" alt="html5"></div>
+                  <div class="skills__item__title">HTML5</div>
+                  <div class="skills__item__text">Именно он создает каркас вашего сайта или приложения, а пятая версия
+                     позволит
+                     мне
+                     создавать более SEO-оптимизированную структуру вашего продукта</div>
+               </div>
+               <div class="skills__item css">
+                  <div class="skills__item__icon"><img src="icons/skills/css3.svg" alt="css3"></div>
+                  <div class="skills__item__title">CSS3</div>
+                  <div class="skills__item__text">Этот язык стилей позволяет мне создавать абсолютно любой внешний вид
+                     вашего
+                     сайта
+                     или приложения. Все ограничивается только вашей фантазией!</div>
+               </div>
+               <div class="skills__item js">
+                  <div class="skills__item__icon"><img src="icons/skills/JS.svg" alt="javascript"></div>
+                  <div class="skills__item__title">Java Script</div>
+                  <div class="skills__item__text">Этот язык программирования позволяет оживить все что угодно: слайдеры,
+                     окна, подсказки, вкладки, получение данных от сервера и многое другое</div>
+               </div>
+               <div class="skills__item jquery">
+                  <div class="skills__item__icon"><img src="icons/skills/Jquery.svg" alt="jquery"></div>
+                  <div class="skills__item__title">Jquery</div>
+                  <div class="skills__item__text">Библиотека Jquery позволит ускорить разработку. Без необходимости
+                     интегрировать в проект мы её не будем, но навык работы с ней присутствует</div>
+               </div>
+               <div class="skills__item react">
+                  <div class="skills__item__icon"><img src="icons/skills/React.svg" alt="react"></div>
+                  <div class="skills__item__title">React</div>
+                  <div class="skills__item__text">Эта библиотека позволяет создавать web-приложения. Мы можем создать
+                     максимально интерактивный продукт именно под ваши цели</div>
+               </div>
+               <!-- todo: Adding new skills -> @media(576)-> grid-template-rows: repeat((total-number-of-skills), minmax(270px, auto)); -->
+            </div>
+            <div class="skills__percentage-row percentage">
+               <div class="percentage__item">
+                  <div class="percentage__sup">
+                     <div class="percentage__sup-skill">Создание сайтов</div>
+                     <div class="persentage__sup-percent">100%</div>
+                  </div>
+                  <div class="percentage__sub">
+                     <div class="percentage__sub-orange"></div>
+                  </div>
+               </div>
+               <div class="percentage__item">
+                  <div class="percentage__sup">
+                     <div class="percentage__sup-skill">Создание приложений</div>
+                     <div class="persentage__sup-percent">85%</div>
+                  </div>
+                  <div class="percentage__sub">
+                     <div class="percentage__sub-orange"></div>
+                  </div>
+               </div>
+               <div class="percentage__item">
+                  <div class="percentage__sup">
+                     <div class="percentage__sup-skill">Работа с данными</div>
+                     <div class="persentage__sup-percent">90%</div>
+                  </div>
+                  <div class="percentage__sub">
+                     <div class="percentage__sub-orange"></div>
+                  </div>
+               </div>
+               <div class="percentage__item">
+                  <div class="percentage__sup">
+                     <div class="percentage__sup-skill">Креативность</div>
+                     <div class="persentage__sup-percent">75%</div>
+                  </div>
+                  <div class="percentage__sub">
+                     <div class="percentage__sub-orange"></div>
+                  </div>
+               </div>
+               <div class="percentage__item">
+                  <div class="percentage__sup">
+                     <div class="percentage__sup-skill">Создание дизайна</div>
+                     <div class="persentage__sup-percent">90%</div>
+                  </div>
+                  <div class="percentage__sub">
+                     <div class="percentage__sub-orange"></div>
+                  </div>
+               </div>
+               <div class="percentage__item">
+                  <div class="percentage__sup">
+                     <div class="percentage__sup-skill">Soft skills</div>
+                     <div class="persentage__sup-percent">95%</div>
+                  </div>
+                  <div class="percentage__sub">
+                     <div class="percentage__sub-orange"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
       <section class="portfolio"></section>
       <section class="contacts"></section>
       <footer class="footer"></footer>

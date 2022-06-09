@@ -27,7 +27,7 @@
 @media (max-width: 1200px) {
    .presentation__img {
       img {
-         width: calc(310px + 350 * ((100vw - 320px) / (1140 - 320)));
+         // width: calc(310px + 350 * ((100vw - 320px) / (1140 - 320)));
          height: calc(380px + 377 * ((100vw - 320px) / (1140 - 320)));
          // width: 660px;
          // height: 757px;
@@ -54,6 +54,10 @@
    }
    .experience {
       padding-right: 15px;
+      &__row {
+         column-gap: 100px;
+         // grid-template-columns: repeat(2, 300px);
+      }
    }
 }
 @media (max-width: 1100px) {
@@ -62,6 +66,13 @@
       margin-right: 20px;
       &__row {
          column-gap: 5px;
+      }
+   }
+   .experience {
+      &__row {
+      }
+      &__study {
+         margin-left: 5px;
       }
    }
 }
@@ -131,9 +142,28 @@
       grid-row: 1/2;
    }
    .experience {
+      &__row {
+         // column-gap: calc(30px + 150 * ((100vw - 320px) / (1280 - 320)));
+      }
       &__suptitle {
+         font-size: calc(16px + 1 * ((100vw - 320px) / (1140 - 320)));
       }
       &__title {
+         font-size: calc(24px + 12 * ((100vw - 320px) / (1140 - 320)));
+      }
+   }
+   .skills {
+      &__row {
+         grid-template-columns: repeat(3, minmax(240px, 270px));
+         justify-content: center;
+      }
+      &__percentage-row {
+         display: grid;
+         grid-template-columns: repeat(2, minmax(260px, 350px));
+         grid-template-rows: repeat(3, minmax(50px, 70px));
+         justify-content: center;
+         padding-left: 10px;
+         padding-right: 10px;
       }
    }
 }
@@ -177,6 +207,15 @@
       grid-column: 1/2;
       grid-row: 2/3;
    }
+   .skills {
+      &__row {
+         grid-template-columns: repeat(2, minmax(240px, 270px));
+         grid-template-rows: repeat(3, minmax(270px, auto));
+      }
+      &__percentage-row {
+         column-gap: 30px;
+      }
+   }
 }
 @media (max-width: 576px) {
    .humburger {
@@ -191,11 +230,6 @@
          column-gap: 0;
          justify-content: center;
       }
-      /*  &__img{
-         img{
-            align-self: center;
-         }
-      } */
       &__horizontal {
          grid-column: 1/2;
          grid-row: 2/3;
@@ -218,6 +252,28 @@
       .column3 {
          grid-column: 1/2;
          grid-row: 3/4;
+      }
+   }
+   .experience {
+      &__row {
+         grid-template-columns: minmax(300px, auto);
+         grid-template-rows: repeat(2, minmax(428px, auto));
+         row-gap: 40px;
+      }
+      &__study,
+      &__work {
+         //!nkcjdsfciu
+         // font-size: calc(24px + 16 *((100vw - 320px) / (1280 - 320)));
+      }
+   }
+   .skills {
+      &__row {
+         grid-template-columns: repeat(1, minmax(240px, 270px));
+         grid-template-rows: repeat(5, minmax(270px, auto));
+      }
+      &__percentage-row {
+         grid-template-columns: repeat(1, minmax(260px, 350px));
+         grid-template-rows: repeat(6, minmax(50px, 70px));
       }
    }
 }

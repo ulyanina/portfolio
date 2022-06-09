@@ -8,12 +8,6 @@
       z-index: 1;
       padding: 206px 0px 362px 0px;
       h1 {
-         font-weight: 700;
-         font-size: 53px;
-         line-height: 63px;
-         margin-bottom: 25px;
-      }
-      h2 {
          position: relative;
          z-index: 2;
          font-weight: 700;
@@ -21,6 +15,12 @@
          padding-left: 14px;
          margin-bottom: 10px;
          @include before-circle;
+      }
+      h2 {
+         font-weight: 700;
+         font-size: 53px;
+         line-height: 63px;
+         margin-bottom: 25px;
       }
    }
    &__buttons {
@@ -60,9 +60,9 @@
       bottom: 0px;
       z-index: 0;
       img {
-         width: 660px;
-         // max-height: 50%;
-         height: 757px;
+         // width: 660px;
+         max-height: 90vh;
+         // height: 757px;
       }
    }
 }
