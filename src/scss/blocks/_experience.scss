@@ -31,7 +31,7 @@
 
    &__row {
       display: grid;
-      grid-template-columns: repeat(2, minmax(300px, 493px));
+      grid-template-columns: repeat(2, minmax(300px, 495px));
       grid-template-rows: minmax(378px, auto);
       column-gap: 180px;
    }
@@ -58,6 +58,11 @@
          left: -38px;
          top: 12px;
          background-color: #000;
+      }
+      &-head {
+         display: grid;
+         grid-template-columns: 50px 325px;
+         grid-template-rows: 50px;
       }
    }
    &__icon {
@@ -111,11 +116,6 @@
    }
 }
 
-.resume__item-head {
-   display: grid;
-   grid-template-columns: 50px 325px;
-   grid-template-rows: 50px;
-}
 .study,
 .work {
    position: relative;

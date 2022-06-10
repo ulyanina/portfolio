@@ -54,8 +54,9 @@
    }
    .experience {
       padding-right: 15px;
+      padding-left: 15px;
       &__row {
-         column-gap: 100px;
+         column-gap: 50px;
          // grid-template-columns: repeat(2, 300px);
       }
    }
@@ -70,9 +71,8 @@
    }
    .experience {
       &__row {
-      }
-      &__study {
-         margin-left: 5px;
+         column-gap: 10px;
+         margin-right: 25px;
       }
    }
 }
@@ -145,14 +145,21 @@
       grid-row: 1/2;
    }
    .experience {
-      &__row {
-         // column-gap: calc(30px + 150 * ((100vw - 320px) / (1280 - 320)));
+      &__study,
+      &__work {
+         padding-left: 90px;
       }
       &__suptitle {
          font-size: calc(16px + 1 * ((100vw - 320px) / (1140 - 320)));
       }
       &__title {
          font-size: calc(24px + 12 * ((100vw - 320px) / (1140 - 320)));
+      }
+   }
+   .study,
+   .work {
+      &::before {
+         left: 52px;
       }
    }
    .skills {
@@ -201,15 +208,43 @@
          grid-template-rows: repeat(2, minmax(120px, auto));
          column-gap: 50px;
          row-gap: 20px;
-         /* &-item{
-      padding-right: 10px;
-         } */
+      }
+      .column3 {
+         grid-column: 1/2;
+         grid-row: 2/3;
       }
    }
-   .column3 {
-      grid-column: 1/2;
-      grid-row: 2/3;
+   .experience {
+      &__row {
+         column-gap: 5px;
+         grid-template-columns: repeat(2, minmax(272px, 495px));
+         margin-right: 0;
+      }
+      &__study,
+      &__work {
+         padding-right: 5px;
+         padding-left: 50px;
+      }
    }
+   .resume {
+      &__item {
+         grid-template-columns: minmax(222px, 375px);
+         grid-template-rows: minmax(43px, 52px) minmax(78px, auto);
+         &-head {
+            grid-template-columns: 50px 243px;
+         }
+      }
+      &__name {
+         max-width: 170px;
+      }
+   }
+   .study,
+   .work {
+      &::before {
+         left: 12px;
+      }
+   }
+
    .skills {
       &__row {
          grid-template-columns: repeat(2, minmax(240px, 270px));
@@ -268,8 +303,7 @@
       }
       &__study,
       &__work {
-         //!nkcjdsfciu
-         // font-size: calc(24px + 16 *((100vw - 320px) / (1280 - 320)));
+         margin-left: 0;
       }
    }
    .skills {

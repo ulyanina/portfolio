@@ -12,6 +12,6 @@ closeBtn.addEventListener('click', () => {
 const percent = document.querySelectorAll('.percentage__sup-percent'),
    coloredLine = document.querySelectorAll('.percentage__sub-color');
 
-   percent.forEach((item, i) => {
-      coloredLine[i].style.width = item.innerHTML;
+percent.forEach((item, i) => {
+   coloredLine[i].style.width = item.innerHTML;
 });
