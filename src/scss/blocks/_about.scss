@@ -2,9 +2,8 @@
    min-height: 840px;
    padding: 120px 0px;
    &__row {
-      padding-right: 100px;
       display: grid;
-      grid-template-columns: 400px 670px;
+      grid-template-columns: 400px minmax(560px, 740px);
       grid-template-rows: minmax(245px, auto) minmax(313px, auto);
       grid-auto-rows: minmax(245px, auto);
       column-gap: 70px;
@@ -57,7 +56,7 @@
 }
 .about__skills-item {
    display: grid;
-   grid-template-columns: repeat(2, minmax(60px, auto));
+   grid-template-columns: 60px minmax(60px, auto);
    grid-template-rows: minmax(92px, auto);
    &-icon {
       position: relative;
@@ -72,7 +71,7 @@
       }
    }
    &-content {
-      max-width: 200px;
+      // max-width: 200px;
    }
    &-title {
       font-weight: 700;
@@ -81,6 +80,7 @@
       margin-bottom: 6px;
    }
    &-text {
+      width: 100%;
       font-weight: 500;
       font-size: 14px;
       line-height: 18px;
