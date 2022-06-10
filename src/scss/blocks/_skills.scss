@@ -68,7 +68,10 @@
       height: 15px;
       background: #e8e4de;
       border-radius: 4px;
-      &-orange {
+      &-color {
+         background-color: $color-red;
+         height: 100%;
+         border-radius: 4px;
       }
    }
 }
