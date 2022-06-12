@@ -177,6 +177,7 @@
       }
    }
    .skills {
+      padding-bottom: calc(50px + 70 * ((100vw - 320px) / (1140 - 320)));
       &__row {
          grid-template-columns: repeat(3, minmax(240px, 270px));
          justify-content: center;
@@ -188,6 +189,15 @@
          justify-content: center;
          padding-left: 10px;
          padding-right: 10px;
+      }
+   }
+   .portfolio {
+      &__title {
+         font-size: calc(24px + 12 * ((100vw - 320px) / (1140 - 320)));
+         margin-bottom: calc(20px + 10 * ((100vw - 320px) / (1140 - 320)));
+      }
+      &__divider {
+         margin-bottom: calc(40px + 20 * ((100vw - 320px) / (1140 - 320)));
       }
    }
 }
@@ -358,4 +368,39 @@
          }
       }
    }
+   .portfolio {
+      padding: 0 20px;
+      &__block {
+         grid-template-columns: repeat(1, 280px);
+         grid-template-rows: repeat(6, 280px);
+         row-gap: 20px;
+      }
+      &__suptitle {
+         font-size: 16px;
+      }
+   }
+   /* .uber {
+      grid-column: 1/2;
+      grid-row: 1/2;
+   }
+   .pulse {
+      grid-column: 1/2;
+      grid-row: 2/3;
+   }
+   .bread {
+      grid-column: 1/2;
+   } */
+   .plans {
+      width: 280px;
+      height: 280px;
+      // grid-column: 1/2;
+   }
+   /*  .ipad {
+      grid-column: 1/2;
+   } */
+   // .mac {
+   //    width: 280px;
+   //    height: 280px;
+   // grid-column: 1/2;
+   // }
 }

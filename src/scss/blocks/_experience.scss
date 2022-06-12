@@ -1,34 +1,15 @@
 .experience {
    min-height: 660px;
    padding-bottom: 120px;
-
-   &__suptitle-before {
-      text-align: center;
-   }
    &__suptitle {
       position: relative;
-      margin-bottom: 16px;
-      font-size: 17px;
-      font-weight: 700;
       @include before-circle;
       &::before {
-         top: -7px;
+         top: -10px;
          left: 50%;
          transform: translateX(-50%);
-         width: 25px;
-         height: 25px;
       }
    }
-   &__title {
-      margin-bottom: 30px;
-   }
-   &__divider {
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-      margin-bottom: 60px;
-   }
-
    &__row {
       display: grid;
       grid-template-columns: repeat(2, minmax(300px, 495px));

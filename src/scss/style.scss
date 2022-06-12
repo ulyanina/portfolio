@@ -89,28 +89,42 @@ body {
    max-width: 1140px;
    margin: 0 auto;
 }
+.title-block {
+   text-align: center;
+}
 
+.title {
+   font-weight: 700;
+   font-size: 36px;
+   margin-bottom: 30px;
+}
 @import "base/variables";
 @import "base/mixins";
+
+.suptitle {
+   font-weight: 700;
+   font-size: 17px;
+   position: relative;
+   margin-bottom: 22px;
+}
+.divider {
+   width: 63px;
+   height: 3px;
+   border: 1px solid $color-red;
+   background-color: $color-red;
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+   margin-bottom: 60px;
+}
+
 @import "blocks/sidepanel";
 @import "blocks/menu";
 @import "blocks/presentation";
 @import "blocks/about";
 @import "blocks/experience";
 @import "blocks/skills";
+@import "blocks/portfolio";
+@import "blocks/prices";
 
-.suptitle {
-   font-weight: 700;
-   font-size: 16px;
-}
-.title {
-   font-weight: 700;
-   font-size: 36px;
-   // line-height: 60px;
-}
-.divider {
-   width: 60px;
-   height: 0px;
-   border: 1px solid $color-red;
-}
 @import "base/media";

@@ -12,8 +12,16 @@
       margin-bottom: 120px;
       justify-content: center;
    }
+   &__suptitle {
+      text-align: center;
+      @include before-circle;
+      &::before {
+         top: -10px;
+         left: 50%;
+         transform: translateX(-50%);
+      }
+   }
 }
-
 .skills__item {
    border: 1px solid #000;
    padding: 30px 29px 25px 30px;
