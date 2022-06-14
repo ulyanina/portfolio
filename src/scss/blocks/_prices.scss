@@ -23,7 +23,8 @@
       padding-left: 25px;
       position: relative;
       display: grid;
-      grid-template: repeat(2, 18px) / repeat(2,170px);
+      grid-template: repeat(2, minmax(18px, auto)) / repeat(2, auto);
+      // grid-template: repeat(2, 18px) / repeat(2, 170px);
       &-service {
          font-weight: 700;
          font-size: 14px;

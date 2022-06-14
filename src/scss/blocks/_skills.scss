@@ -25,15 +25,15 @@
 .skills__item {
    border: 1px solid #000;
    padding: 30px 29px 25px 30px;
-   &__icon {
+   &-icon {
       margin-bottom: 20px;
    }
-   &__title {
+   &-title {
       margin-bottom: 15px;
       font-weight: 700;
       font-size: 15px;
    }
-   &__text {
+   &-text {
       font-weight: 500;
       font-size: 13px;
       line-height: 18px;

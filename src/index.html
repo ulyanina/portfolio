@@ -225,37 +225,37 @@
             </div>
             <div class="skills__row">
                <div class="skills__item html">
-                  <div class="skills__item__icon"><img src="icons/skills/html5.svg" alt="html5"></div>
-                  <div class="skills__item__title">HTML5</div>
-                  <div class="skills__item__text">Именно он создает каркас вашего сайта или приложения, а пятая версия
+                  <div class="skills__item-icon"><img src="icons/skills/html5.svg" alt="html5"></div>
+                  <div class="skills__item-title">HTML5</div>
+                  <div class="skills__item-text">Именно он создает каркас вашего сайта или приложения, а пятая версия
                      позволит
                      мне
                      создавать более SEO-оптимизированную структуру вашего продукта</div>
                </div>
                <div class="skills__item css">
-                  <div class="skills__item__icon"><img src="icons/skills/css3.svg" alt="css3"></div>
-                  <div class="skills__item__title">CSS3</div>
-                  <div class="skills__item__text">Этот язык стилей позволяет мне создавать абсолютно любой внешний вид
+                  <div class="skills__item-icon"><img src="icons/skills/css3.svg" alt="css3"></div>
+                  <div class="skills__item-title">CSS3</div>
+                  <div class="skills__item-text">Этот язык стилей позволяет мне создавать абсолютно любой внешний вид
                      вашего
                      сайта
                      или приложения. Все ограничивается только вашей фантазией!</div>
                </div>
                <div class="skills__item js">
-                  <div class="skills__item__icon"><img src="icons/skills/JS.svg" alt="javascript"></div>
-                  <div class="skills__item__title">Java Script</div>
-                  <div class="skills__item__text">Этот язык программирования позволяет оживить все что угодно: слайдеры,
+                  <div class="skills__item-icon"><img src="icons/skills/JS.svg" alt="javascript"></div>
+                  <div class="skills__item-title">Java Script</div>
+                  <div class="skills__item-text">Этот язык программирования позволяет оживить все что угодно: слайдеры,
                      окна, подсказки, вкладки, получение данных от сервера и многое другое</div>
                </div>
                <div class="skills__item jquery">
-                  <div class="skills__item__icon"><img src="icons/skills/Jquery.svg" alt="jquery"></div>
-                  <div class="skills__item__title">Jquery</div>
-                  <div class="skills__item__text">Библиотека Jquery позволит ускорить разработку. Без необходимости
+                  <div class="skills__item-icon"><img src="icons/skills/Jquery.svg" alt="jquery"></div>
+                  <div class="skills__item-title">Jquery</div>
+                  <div class="skills__item-text">Библиотека Jquery позволит ускорить разработку. Без необходимости
                      интегрировать в проект мы её не будем, но навык работы с ней присутствует</div>
                </div>
                <div class="skills__item react">
-                  <div class="skills__item__icon"><img src="icons/skills/React.svg" alt="react"></div>
-                  <div class="skills__item__title">React</div>
-                  <div class="skills__item__text">Эта библиотека позволяет создавать web-приложения. Мы можем создать
+                  <div class="skills__item-icon"><img src="icons/skills/React.svg" alt="react"></div>
+                  <div class="skills__item-title">React</div>
+                  <div class="skills__item-text">Эта библиотека позволяет создавать web-приложения. Мы можем создать
                      максимально интерактивный продукт именно под ваши цели</div>
                </div>
                <!-- todo: Adding new skills -> @media(576)-> grid-template-rows: repeat((total-number-of-skills), minmax(270px, auto)); -->
@@ -387,7 +387,47 @@
             </div>
          </div>
       </section>
-      <section class="contacts"></section>
+      <section class="contacts">
+         <div class="container">
+            <div class="contacts__row">
+               <div class="contacts__foto">
+                  <img src="img/about/Photo.jpg" alt="my-photo">
+               </div>
+               <div class="contacts__column">
+                  <h1 class="contacts__suptitle suptitle">Контакты</h1>
+                  <div class="contacts__title title">Свяжитесь со мной</div>
+                  <div class="contacts__divider divider"></div>
+                  <div class="contacts__phrase">Любым удобным для вас способом:</div>
+                  <div class="contacts__social-row">
+                     <a href="#" class="contacts__social-item">
+                        <img src="icons/sidepanel/Github.svg" alt="github"></a>
+                     <a href="#" class="contacts__social-item">
+                        <img src="icons/sidepanel/vk.svg" alt="vk"></a>
+                     <a href="#" class="contacts__social-item">
+                        <img src="icons/sidepanel/Telegram.svg" alt="telegram"></a>
+                  </div>
+                  <div class="contacts__phrase">Или оставьте ваши данные и я сама вам напишу:</div>
+                  <form action="#" class="contacts__forms-row">
+                     <fieldset>
+                        <legend class="contacts__legend-small">Ваше имя</legend>
+                        <input name="name" type="text">
+                     </fieldset>
+                     <fieldset>
+                        <legend>Ваша почта</legend>
+                        <input name="email" type="email">
+                     </fieldset>
+                     <fieldset>
+                        <legend>Ваше сообщение</legend>
+                        <div class="textarea-horizontal">
+                           <textarea name="message" type="text" cols="70" rows="7"></textarea>
+                        </div>
+                     </fieldset>
+                     <button class="contacts__send-button">Отправить сообщение</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
       <footer class="footer"></footer>
    </div>
    <script src="js/script.js"></script>
