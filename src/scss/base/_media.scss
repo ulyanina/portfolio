@@ -64,6 +64,9 @@
          // grid-template-columns: repeat(2, 300px);
       }
    }
+   .contacts__row {
+      padding-left: 30px;
+   }
 }
 @media (max-width: 1100px) {
    .about {
@@ -86,6 +89,10 @@
          column-gap: 10px;
          margin-right: 25px;
       }
+   }
+   .contacts__row {
+      column-gap: 20px;
+      padding-left: 20px;
    }
 }
 @media (max-width: 991px) {
@@ -200,10 +207,31 @@
          margin-bottom: calc(40px + 20 * ((100vw - 320px) / (1140 - 320)));
       }
    }
+   .prices {
+      min-height: 300px;
+      padding: 0 30px 120px;
+      &__row {
+         column-gap: 50px;
+      }
+   }
+   .contacts {
+      &__foto {
+         // font-size: calc(24px + 16 *((100vw - 320px) / (1280 - 320)));
+      }
+      &__policy {
+         padding-left: 20px;
+         font-size: 13px;
+      }
+      &__send-button {
+         font-size: 13px;
+         padding: 0 10px;
+         line-height: 15px;
+      }
+   }
 }
 @media (max-width: 768px) {
    .presentation__row {
-      margin-left: calc(80px + 50 * ((100vw - 320px) / (1140 - 320)));
+      margin-left: calc(65px + 65 * ((100vw - 320px) / (1140 - 320)));
    }
    .presentation {
       &__row {
@@ -278,8 +306,32 @@
          column-gap: 30px;
       }
    }
+   .prices {
+      padding: 0 50px 90px;
+      &__row {
+         grid-template: repeat(2, 44px) / minmax(301px, 367px);
+         row-gap: 20px;
+         //    grid-template-rows: repeat(2, minmax(21px, auto));
+         //    column-gap: 40px;
+         // }
+         justify-content: center;
+      }
+   }
+   .price-description {
+      align-items: start;
+   }
+   .contacts {
+      fieldset {
+         input {
+            margin: 3px 3px 0px 20px;
+         }
+      }
+   }
 }
 @media (max-width: 576px) {
+   .sidepanel {
+      display: none;
+   }
    .humburger {
       top: 20px;
       right: 30px;
@@ -351,10 +403,71 @@
          grid-template-rows: repeat(6, minmax(50px, 70px));
       }
    }
+   .contacts {
+      padding-bottom: 50px;
+      &__row {
+         grid-template: 0px minmax(auto, 700px) / minmax(auto, 584px);
+         padding-left: 15px;
+      }
+      &__column {
+         grid-row: 2/3;
+      }
+      &__foto {
+         display: none;
+      }
+      img {
+      }
+      &__send-button {
+         max-width: 219px;
+      }
+   }
 }
 @media (max-width: 380px) {
+   .presentation {
+      &__buttons {
+         width: 250px;
+      }
+      &__button-active {
+         margin-right: 0;
+         max-width: 125px;
+      }
+      &__button {
+         max-width: 125px;
+      }
+   }
    .sidepanel {
       left: -155px;
+   }
+   .contacts {
+      &__row {
+         padding-right: 15px;
+      }
+      &__title {
+         font-size: 28px;
+      }
+      &__forms-row {
+         grid-template: 45px 45px 190px 36px 30px / repeat(2, minmax(50px, 280px));
+      }
+      fieldset.input-name {
+         grid-row: 1/2;
+         grid-column: 1/3;
+      }
+      fieldset.input-email {
+         grid-row: 2/3;
+         grid-column: 1/3;
+      }
+      .textarea-horizontal {
+         grid-row: 3/4;
+      }
+      &__actions {
+         grid-row: 4/6;
+         grid-template: repeat(2, auto) / auto;
+      }
+      &__policy {
+         grid-row: 1/2;
+         padding: 0;
+         font-size: 12px;
+      }
    }
 }
 @media (max-width: 320px) {

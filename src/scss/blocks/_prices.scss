@@ -3,7 +3,7 @@
    padding: 0 50px 120px 50px;
    &__row {
       display: grid;
-      grid-template-columns: repeat(2, 366px);
+      grid-template-columns: repeat(2, minmax(auto, 366px));
       grid-template-rows: repeat(3, 36px);
       row-gap: 18px;
       justify-content: space-between;
@@ -24,6 +24,7 @@
       position: relative;
       display: grid;
       grid-template: repeat(2, minmax(18px, auto)) / repeat(2, auto);
+      // grid-template: repeat(2, minmax(18px, auto)) / minmax(200px, auto) minmax(100px, auto);
       // grid-template: repeat(2, 18px) / repeat(2, 170px);
       &-service {
          font-weight: 700;
@@ -42,6 +43,7 @@
       }
       &-description {
          grid-column: 1/3;
+         grid-row: 2/3;
          align-self: end;
          font-weight: 500;
          font-size: 12px;

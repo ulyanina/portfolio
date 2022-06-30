@@ -357,7 +357,7 @@
                <div class="price__item">
                   <div class="price__item-service">Landing-page</div>
                   <div class="price__item-number">от 8000 руб.</div>
-                  <div class="price__item-description">Одностраничный сайт для презентации услуг/товаров/...</div>
+                  <div class="price__item-description">Одностраничный сайт для презентации услуг/товаров</div>
                </div>
                <div class="price__item">
                   <div class="price__item-service">Web-приложение</div>
@@ -408,11 +408,11 @@
                   </div>
                   <div class="contacts__phrase">Или оставьте ваши данные и я сама вам напишу:</div>
                   <form action="#" class="contacts__forms-row">
-                     <fieldset>
+                     <fieldset class="input-name">
                         <legend class="contacts__legend-small">Ваше имя</legend>
                         <input name="name" type="text">
                      </fieldset>
-                     <fieldset>
+                     <fieldset class="input-email">
                         <legend>Ваша почта</legend>
                         <input name="email" type="email">
                      </fieldset>
@@ -422,7 +422,13 @@
                            <textarea name="message" type="text" cols="70" rows="7"></textarea>
                         </div>
                      </fieldset>
-                     <button class="contacts__send-button">Отправить сообщение</button>
+                     <div class="contacts__actions">
+                        <button class="contacts__send-button">Отправить сообщение</button>
+                        <div class="contacts__policy">
+                           <input required name="policy" type="checkbox">
+                           <span>Я согласен(а) с <a href="#">политикой конфиденциальности</a></span>
+                        </div>
+                     </div>
                   </form>
                </div>
             </div>
