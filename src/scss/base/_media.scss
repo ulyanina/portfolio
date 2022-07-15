@@ -1,10 +1,12 @@
-@media (max-width: 1500px) {
+@media (max-width: 1600px) {
    .presentation__row {
-      margin-left: calc(42px + 88 * ((100vw - 320px) / (1140 - 320)));
+      margin-left: 100px;
    }
+}
+@media (max-width: 1500px) {
    .presentation {
       &__img {
-         left: calc(0px + 850 * ((100vw - 320px) / (1800 - 320)));
+         // left: calc(0px + 850 * ((100vw - 320px) / (1800 - 320)));
       }
    }
    .sidepanel {
@@ -25,9 +27,13 @@
    }
 }
 @media (max-width: 1200px) {
+   .container {
+      max-width: 960px;
+      margin: 0 50px;
+   }
    .presentation__img {
       img {
-         height: calc(380px + 377 * ((100vw - 320px) / (1140 - 320)));
+         // height: calc(380px + 377 * ((100vw - 320px) / (1140 - 320)));
       }
    }
    .sidepanel {
@@ -95,11 +101,17 @@
       padding-left: 20px;
    }
 }
-@media (max-width: 991px) {
+@media (max-width: 992px) {
+   .container {
+      max-width: 720px;
+   }
    .menu__footer {
-      bottom: 90px;
+      bottom: 100px;
    }
    .presentation {
+      &__row {
+         margin-left: 0;
+      }
       h1 {
          font-size: calc(15px + 3 * ((100vw - 320px) / (1140 - 320)));
       }
@@ -107,14 +119,16 @@
          font-size: calc(29px + 24 * ((100vw - 320px) / (1140 - 320)));
          line-height: calc(42px + 21 * ((100vw - 320px) / (1140 - 320)));
       }
-      &__text {
-         padding-top: calc(86px + 120 * ((100vw - 320px) / (1140 - 320)));
+      &__img {
+         right: 0;
+         left: 130px;
+         img {
+            opacity: 0.6;
+         }
       }
    }
    .sidepanel {
-      span {
-         font-size: 15px;
-      }
+      display: none;
    }
    .about {
       &__row {
@@ -230,9 +244,12 @@
    }
 }
 @media (max-width: 768px) {
-   .presentation__row {
-      margin-left: calc(65px + 65 * ((100vw - 320px) / (1140 - 320)));
+   .container {
+      max-width: 540px;
    }
+   /* .presentation__row {
+      margin-left: calc(65px + 65 * ((100vw - 320px) / (1140 - 320)));
+   } */
    .presentation {
       &__row {
          flex-direction: column;
@@ -240,11 +257,9 @@
       &__text {
          padding-bottom: 0;
       }
-   }
-   .sidepanel {
-      left: -142px;
-      span {
-         font-size: 15px;
+      &__img {
+         right: 0;
+         left: 20px;
       }
    }
    .about {
@@ -329,9 +344,12 @@
    }
 }
 @media (max-width: 576px) {
-   .sidepanel {
-      display: none;
+   .container {
+      width: 100%;
+      margin: 0;
+      padding: 0 30px;
    }
+
    .humburger {
       top: 20px;
       right: 30px;
@@ -344,9 +362,11 @@
          }
       }
    }
-   .presentation__text {
-      padding-top: 70px;
+   /* .presentation__text {
+      padding-top: 60px;
    }
+   .presentation__row {
+   } */
    .about {
       padding-left: 20px;
       &__row {
