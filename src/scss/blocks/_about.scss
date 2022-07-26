@@ -1,10 +1,14 @@
 .about {
-   min-height: 840px;
+   min-height: 720px;
    padding: 120px 0px;
    &__row {
       display: grid;
-      grid-template-columns: 400px minmax(560px, 740px);
-      grid-template-rows: minmax(245px, auto) minmax(313px, auto);
+      grid-template-columns: minmax(200px, 400px) minmax(300px, auto);
+      grid-template-rows: minmax(245px, auto) minmax(160px, auto);
+      // grid-template-columns: minmax(200px, 400px) minmax(435px, auto);
+      // grid-template-rows: minmax(245px, auto) minmax(160px, auto);
+      // grid-template-columns: minmax(200px, 400px) minmax(560px, auto);
+      // grid-template-rows: minmax(245px, auto) minmax(313px, auto);
       grid-auto-rows: minmax(245px, auto);
       column-gap: 70px;
    }
