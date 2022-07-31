@@ -1,14 +1,11 @@
 .about {
-   min-height: 720px;
+   min-height: 658px;
    padding: 120px 0px;
    &__row {
+      margin: 0 15px;
       display: grid;
       grid-template-columns: minmax(200px, 400px) minmax(300px, auto);
       grid-template-rows: minmax(245px, auto) minmax(160px, auto);
-      // grid-template-columns: minmax(200px, 400px) minmax(435px, auto);
-      // grid-template-rows: minmax(245px, auto) minmax(160px, auto);
-      // grid-template-columns: minmax(200px, 400px) minmax(560px, auto);
-      // grid-template-rows: minmax(245px, auto) minmax(313px, auto);
       grid-auto-rows: minmax(245px, auto);
       column-gap: 70px;
    }
@@ -78,7 +75,7 @@
       }
    }
    &-content {
-      // max-width: 200px;
+   
    }
    &-title {
       font-weight: 700;
