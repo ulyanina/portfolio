@@ -54,32 +54,58 @@
    &__forms-row {
       display: grid;
       grid-template-columns: repeat(2, minmax(50px, 280px));
-      grid-template-rows: 45px 190px 63px;
+      grid-template-rows: 45px 190px minmax(63px, auto);
       column-gap: 25px;
       row-gap: 21px;
       margin-bottom: 28px;
    }
-   fieldset {
-      legend {
-         font-weight: 500;
+   &__input-name,
+   &__input-email,
+   &__textarea {
+      position: relative;
+      border: solid #000 1px;
+      width: 100%;
+      height: 100%;
+      label {
+         display: block;
+         position: absolute;
+         left: 20px;
+         top: -6px;
+         width: 69px;
          font-size: 12px;
          padding: 0 8px;
-         margin-left: 12px;
+         background-color: #fff;
       }
       input {
-         margin: 3px 0 0 20px;
+         padding: 12px 20px 10px;
+         width: 100%;
+         height: 100%;
          border: 0;
-         // max-width: 100%;
-      }
-      textarea {
-         margin: 10px 12px;
-         padding: 5px 20px;
-         border: 0;
-         resize: none;
       }
    }
-   .textarea-horizontal {
-      width: 582px;
+   &__input-email {
+      label {
+         width: 78px;
+      }
+   }
+   &__textarea {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      grid-column: 1/3;
+      border: solid #000 1px;
+
+      label {
+         position: absolute;
+         width: 107px;
+      }
+      textarea {
+         resize: none;
+         padding: 18px 20px 20px;
+         width: 100%;
+         height: 100%;
+         border: 0;
+      }
    }
    &__actions {
       grid-column: 1/3;

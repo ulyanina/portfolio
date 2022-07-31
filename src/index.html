@@ -406,21 +406,24 @@
                         <img src="icons/sidepanel/Telegram.svg" alt="telegram"></a>
                   </div>
                   <div class="contacts__phrase">Или оставьте ваши данные и я сама вам напишу:</div>
+
                   <form action="#" class="contacts__forms-row">
-                     <fieldset class="input-name">
-                        <legend class="contacts__legend-small">Ваше имя</legend>
-                        <input name="name" type="text">
-                     </fieldset>
-                     <fieldset class="input-email">
-                        <legend>Ваша почта</legend>
-                        <input name="email" type="email">
-                     </fieldset>
-                     <fieldset>
-                        <legend>Ваше сообщение</legend>
-                        <div class="textarea-horizontal">
-                           <textarea name="message" type="text" cols="70" rows="7"></textarea>
-                        </div>
-                     </fieldset>
+
+                     <div class="contacts__input-name">
+                        <label for="name">Ваше имя</label>
+                        <input id="name" name="name" type="text">
+                     </div>
+
+                     <div class="contacts__input-email">
+                        <label for="email">Ваша почта</label>
+                        <input id="email" name="email" type="email">
+                     </div>
+
+                     <div class="contacts__textarea">
+                        <label for="textarea">Ваше сообщение</label>
+                        <textarea id="textarea" name="message" type="text"></textarea>
+                     </div>
+
                      <div class="contacts__actions">
                         <button class="contacts__send-button">Отправить сообщение</button>
                         <div class="contacts__policy">
@@ -429,6 +432,7 @@
                         </div>
                      </div>
                   </form>
+
                </div>
             </div>
          </div>
