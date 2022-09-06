@@ -1,124 +1,166 @@
 @media (max-width: 1600px) {
-   .presentation__row {
-      margin-left: 100px;
+   .presentation {
+      &__row {
+         margin-left: 100px;
+      }
+
+      &__img {
+         right: 233px;
+      }
    }
 }
+
 @media (max-width: 1500px) {
    .sidepanel {
       position: absolute;
       left: -110px;
    }
 }
+
 @media (max-width: 1300px) {
    .sidepanel {
       display: none;
    }
-   .presentation__row {
-      margin-left: 50px;
+
+   .presentation {
+      &__row {
+         margin-left: 50px;
+      }
+
+      &__img {
+         right: 100px;
+      }
    }
 }
+
 @media (max-width: 1200px) {
-   .container {
+
+   /* .container {
       // max-width: 960px;
       // margin: 0 70px;
-   }
+   } */
    .about {
       padding: 60px 10px 100px;
+
       &__row {
          column-gap: 50px;
       }
    }
+
    .horizontal {
       padding-right: 0;
+
       &__title {
          font-size: calc(24px + 12 * ((100vw - 320px) / (1140 - 320)));
       }
+
       &__text {
          font-size: calc(15px + 2 * ((100vw - 320px) / (1140 - 320)));
       }
    }
+
    .about__skills {
       padding-right: 0;
    }
+
    .experience {
       padding-right: 15px;
       padding-left: 15px;
+
       &__row {
          column-gap: 50px;
          // grid-template-columns: repeat(2, 300px);
       }
    }
+
    .contacts__row {
       column-gap: 20px;
       padding-left: 30px;
    }
 }
+
 @media (max-width: 1100px) {
    .about {
       padding-left: 10px;
+
       &__row {
          column-gap: 45px;
       }
    }
+
    .about__skills {
       column-gap: 40px;
       row-gap: 30px;
    }
+
    .experience {
       &__row {
          column-gap: 10px;
          margin-right: 25px;
       }
    }
+
    .contacts__row {
       column-gap: 20px;
       padding-left: 20px;
       padding-right: 30px;
    }
 }
+
 @media (max-width: 992px) {
    .menu__footer {
       bottom: 100px;
    }
+
    .presentation {
       .container {
          margin: 0 25px;
       }
+
       &__row {
          margin-left: 0;
       }
+
       h1 {
          font-size: calc(15px + 3 * ((100vw - 320px) / (1140 - 320)));
       }
+
       h2 {
          font-size: calc(29px + 24 * ((100vw - 320px) / (1140 - 320)));
          line-height: calc(42px + 21 * ((100vw - 320px) / (1140 - 320)));
       }
+
       &__img {
-         right: 0;
          left: 130px;
+         bottom: 0;
+
          img {
             opacity: 0.6;
          }
       }
    }
+
    .about {
       padding-top: 40px;
       padding-bottom: 80px;
+
       &__row {
          grid-template-columns: minmax(50px, 400px) minmax(350px, auto);
          grid-template-rows: minmax(245px, auto) minmax(160px, auto);
          column-gap: 40px;
       }
+
       &__img {
          grid-column: 1/2;
          grid-row: 1/3;
       }
+
       &__horizontal {
          justify-self: center;
          padding-right: 0;
          margin-bottom: 30px;
       }
+
       &__skills {
          grid-column: 2/3;
          grid-row: 2/3;
@@ -127,72 +169,91 @@
          grid-template-rows: repeat(3, minmax(90px, auto));
          column-gap: 10px;
          row-gap: 0;
+
          &-item {
+
             // padding-left: 10px;
             &-title {
                font-size: calc(14px + 2 * ((100vw - 320px) / (1140 - 320)));
             }
+
             &-text {
                font-size: calc(13px + 1 * ((100vw - 320px) / (1140 - 320)));
                margin-bottom: 10px;
             }
          }
       }
+
       .column1 {
          grid-column: 1/2;
          grid-row: 1/2;
       }
+
       .column2 {
          grid-column: 1/2;
          grid-row: 2/3;
       }
+
       .column3 {
          grid-column: 1/2;
          grid-row: 3/4;
       }
    }
+
    .horizontal__text {
       margin-bottom: 0;
    }
+
    .column1 {
       grid-column: 1/2;
       grid-row: 1/2;
    }
+
    .column2 {
       grid-column: 2/3;
       grid-row: 1/2;
    }
+
    .column3 {
       grid-column: 3/4;
       grid-row: 1/2;
    }
+
    .experience {
+
       &__study,
       &__work {
          padding-left: 90px;
       }
+
       &__suptitle {
          font-size: calc(16px + 1 * ((100vw - 320px) / (1140 - 320)));
       }
+
       &__title {
          font-size: calc(24px + 12 * ((100vw - 320px) / (1140 - 320)));
       }
    }
+
    .study,
    .work {
       &::before {
          left: 52px;
       }
    }
+
    .skills {
       padding-bottom: calc(50px + 70 * ((100vw - 320px) / (1140 - 320)));
+
       &__title {
          font-size: calc(24px + 12 * ((100vw - 320px) / (1140 - 320)));
       }
+
       &__row {
          grid-template-columns: repeat(3, minmax(240px, 270px));
          justify-content: center;
       }
+
       &__percentage-row {
          display: grid;
          grid-template-columns: repeat(2, minmax(260px, 350px));
@@ -202,30 +263,37 @@
          padding-right: 10px;
       }
    }
+
    .portfolio {
       &__title {
          font-size: calc(24px + 12 * ((100vw - 320px) / (1140 - 320)));
          margin-bottom: calc(20px + 10 * ((100vw - 320px) / (1140 - 320)));
       }
+
       &__divider {
          margin-bottom: calc(40px + 20 * ((100vw - 320px) / (1140 - 320)));
       }
    }
+
    .prices {
       min-height: 300px;
       padding: 0 30px 120px;
+
       &__row {
          column-gap: 50px;
       }
    }
+
    .contacts {
       &__title {
          font-size: calc(24px + 12 * ((100vw - 320px) / (1140 - 320)));
       }
+
       &__policy {
          padding-left: 20px;
          font-size: 13px;
       }
+
       &__send-button {
          font-size: 13px;
          padding: 0 10px;
@@ -233,7 +301,9 @@
       }
    }
 }
+
 @media (max-width: 768px) {
+
    /*  .container {
       margin: 0 25px;
    } */
@@ -241,12 +311,15 @@
       &__row {
          flex-direction: column;
       }
+
       &__text {
          padding-bottom: 0;
       }
+
       &__img {
-         right: 0;
-         left: 20px;
+         right: 35px;
+         // left: 20px;
+         bottom: 0;
       }
    }
 
@@ -254,21 +327,25 @@
       .container {
          margin: 0 45px;
       }
+
       &__row {
          grid-template-columns: minmax(285px, auto);
          grid-template-rows: minmax(340px, 340px) minmax(260px, auto) minmax(260px, auto);
          column-gap: 0;
          justify-content: center;
       }
+
       &__img {
          grid-row: 1/2;
          margin-bottom: 20px;
       }
+
       &__horizontal {
          grid-column: 1/2;
          grid-row: 2/3;
          margin-bottom: 40px;
       }
+
       &__skills {
          justify-content: center;
          grid-column: 1/2;
@@ -276,53 +353,65 @@
          grid-template-columns: repeat(2, 1fr);
          grid-template-rows: repeat(2, minmax(120px, auto));
          row-gap: 20px;
+
          &-item {
             &-text {
                margin: 0;
             }
          }
       }
+
       .column1 {
          grid-column: 1/2;
          grid-row: 1/2;
       }
+
       .column2 {
          grid-column: 2/3;
          grid-row: 1/2;
       }
+
       .column3 {
          grid-column: 1/2;
          grid-row: 2/3;
       }
    }
+
    .experience {
       padding-bottom: 100px;
+
       .container {
          margin: 0;
       }
+
       &__row {
          column-gap: 5px;
          grid-template-columns: repeat(2, minmax(272px, 495px));
          margin-right: 0;
       }
+
       &__study,
       &__work {
          padding-right: 5px;
          padding-left: 50px;
       }
    }
+
    .resume {
       &__item {
          grid-template-columns: minmax(222px, 375px);
          grid-template-rows: minmax(43px, 52px) minmax(78px, auto);
+
          &-head {
             grid-template-columns: 50px 243px;
          }
       }
+
       &__name {
          max-width: 170px;
       }
    }
+
    .study,
    .work {
       &::before {
@@ -335,18 +424,22 @@
          grid-template-columns: repeat(2, minmax(240px, 270px));
          grid-template-rows: repeat(3, minmax(270px, auto));
       }
+
       &__percentage-row {
          column-gap: 30px;
       }
    }
+
    .portfolio {
       &__block {
          grid-template-columns: repeat(4, minmax(auto, 183px));
          grid-template-rows: repeat(2, minmax(auto, 183px));
       }
    }
+
    .prices {
       padding: 0 50px 90px;
+
       &__row {
          grid-template: repeat(2, 44px) / minmax(301px, 367px);
          row-gap: 20px;
@@ -356,18 +449,22 @@
          justify-content: center;
       }
    }
+
    .price-description {
       align-items: start;
    }
+
    .contacts {
       .container {
          margin: 0 25px;
       }
+
       &__row {
          padding: 0;
       }
    }
 }
+
 @media (max-width: 576px) {
    .container {
       width: 100%;
@@ -378,56 +475,73 @@
    .humburger {
       top: 25px;
       right: 30px;
+
       span {
          width: 25px;
          height: 2px;
          margin: 2px;
+
          &.long {
             width: 30px;
          }
       }
    }
+
    .menu {
       width: 70%;
+
       &__list {
          padding-right: 40px;
       }
+
       &__link {
          font-size: calc(17px + 7 * ((100vw - 320px) / (540 - 320)));
       }
+
       &__footer {
          left: 70px;
       }
    }
 
+   .presentation__img {
+      left: 20px;
+   }
+
    .about {
       padding-top: 10px;
       padding-bottom: 50px;
+
       .container {
          padding: 20px;
          margin: 0;
       }
+
       &__row {
          grid-template-columns: minmax(285px, auto);
          margin: 0;
       }
+
       &__skills {
          grid-template-columns: minmax(280px, auto);
          grid-template-rows: repeat(3, minmax(90px, auto));
       }
+
       .column1 {
          grid-column: 1/2;
          grid-row: 1/2;
       }
+
       .column2 {
          grid-column: 1/2;
          grid-row: 2/3;
       }
+
       .column3 {
          grid-column: 1/2;
          grid-row: 3/4;
       }
    }
+
    .experience {
       &__row {
          grid-template-columns: minmax(300px, 450px);
@@ -437,83 +551,101 @@
          margin-right: 20px;
          margin-left: 20px;
       }
+
       &__study,
       &__work {
          margin-left: 0;
       }
    }
+
    .skills {
       &__row {
          grid-template-columns: repeat(1, minmax(240px, 270px));
          grid-template-rows: repeat(5, minmax(270px, auto));
       }
+
       &__percentage-row {
          grid-template-columns: repeat(1, minmax(260px, 350px));
          grid-template-rows: repeat(6, minmax(50px, 70px));
       }
    }
+
    .portfolio {
       .container {
          padding: 0 10px;
       }
+
       &__block {
          grid-template-columns: repeat(2, minmax(auto, 280px));
          grid-template-rows: repeat(4, minmax(auto, 280px));
          // grid-template-columns: repeat(4, minmax(auto, 183px));
          // grid-template-rows: repeat(2, minmax(auto, 183px));
       }
+
       .plans {
          grid-column: 2/3;
          grid-row: 1/3;
       }
+
       .mac {
          grid-column: 1/3;
          grid-row: 3/4;
       }
    }
+
    .contacts {
       padding-bottom: 0;
+
+      .container {
+         margin: 0;
+      }
+
       &__row {
          grid-template: 0px minmax(auto, 700px) / minmax(auto, 584px);
-         padding-left: 15px;
+         padding-left: 0;
       }
+
       &__column {
          grid-row: 2/3;
       }
+
       &__foto {
          display: none;
       }
 
-      img {
-      }
       &__send-button {
          max-width: 219px;
       }
    }
 }
+
 @media (max-width: 400px) {
    .menu {
       &__list {
          padding-right: 30px;
       }
    }
+
    .presentation {
+      & .container{
+         margin: 0;
+      }
       &__buttons {
          width: 250px;
       }
+
       &__button-active {
          margin-right: 0;
          max-width: 125px;
       }
+
       &__button {
          max-width: 125px;
       }
    }
-   /* .about {
-      margin: 0 0px;
-   } */
    .portfolio {
       padding: 0 20px;
+
       &__block {
          grid-template-columns: repeat(1, minmax(auto, 280px));
          grid-template-rows: repeat(6, minmax(auto, 280px));
@@ -521,12 +653,14 @@
          row-gap: 10px;
          margin: 0;
          justify-content: center;
+
          .plans {
             width: 280px;
             height: 280px;
             grid-column: 1/2;
             grid-row: 3/4;
          }
+
          .mac {
             width: 280px;
             height: 280px;
@@ -534,6 +668,7 @@
             grid-row: 4/5;
          }
       }
+
       &__suptitle {
          font-size: 16px;
       }
@@ -541,38 +676,45 @@
 
    .contacts {
       .container {
-         padding: 0;
+         padding: 0 20px;
          margin: 0;
       }
+
       &__row {
          padding: 0;
       }
+
       &__actions {
          grid-row: 3/4;
          grid-template: repeat(2, auto) / auto;
       }
+
       &__policy {
          grid-row: 1/2;
          padding: 0;
          font-size: 12px;
          margin-top: 20px;
       }
+
       &__send-button {
          margin-top: 20px;
       }
    }
+
    #name,
    #email,
    #textarea {
       padding: 10px 12px;
    }
 }
+
 @media (max-width: 320px) {
    .humburger {
       span {
          margin: 2px;
          width: 28px;
          height: 3px;
+
          &.long {
             width: 28px;
          }
