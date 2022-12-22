@@ -1,6 +1,6 @@
 .portfolio {
    min-height: 520px;
-   margin-bottom: 60px;
+   margin-bottom: 80px;
    &__suptitle {
       position: relative;
       @include before-circle;
@@ -20,8 +20,8 @@
    }
    &__block-item {
       cursor: pointer;
-      picture{
-         source{
+      picture {
+         source {
             object-fit: cover;
          }
       }

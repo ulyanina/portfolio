@@ -37,7 +37,7 @@
    .container {
       // max-width: 960px;
       // margin: 0 70px;
-   } 
+   }
    .about {
       padding: 60px 10px 100px;
 
@@ -237,7 +237,7 @@
    }
 
    .skills {
-      padding-bottom: calc(50px + 70 * ((100vw - 320px) / (1140 - 320)));
+      padding-bottom: calc(80px + 40 * ((100vw - 320px) / (1140 - 320)));
 
       &__title {
          font-size: calc(24px + 12 * ((100vw - 320px) / (1140 - 320)));
@@ -429,7 +429,9 @@
    }
    .prices {
       padding: 0 50px 90px;
-
+&__divider{
+   margin-bottom: 40px;
+}
       &__row {
          grid-template: repeat(2, 44px) / minmax(301px, 367px);
          row-gap: 20px;
@@ -652,12 +654,6 @@
       }
       &__suptitle {
          font-size: 16px;
-      }
-   }
-   .prices {
-      .container {
-         padding: 0;
-         margin: 0 10px;
       }
    }
    .contacts {
