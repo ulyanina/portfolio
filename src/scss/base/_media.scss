@@ -473,18 +473,19 @@
    }
    .contacts {
       padding-bottom: 0;
+      .container {
+         margin: 0;
+      }
       &__row {
          grid-template: 0px minmax(auto, 700px) / minmax(auto, 584px);
-         padding-left: 15px;
+         // padding-left: 15px;
+         padding-left: 0;
       }
       &__column {
          grid-row: 2/3;
       }
       &__foto {
          display: none;
-      }
-
-      img {
       }
       &__send-button {
          max-width: 219px;
