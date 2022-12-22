@@ -114,10 +114,16 @@
       grid-template-columns: repeat(2, auto);
    }
    &__policy {
+      position: relative;
       padding-top: 33px;
       padding-left: 12px;
       input {
          margin-right: 10px;
+      }
+      span{
+         position: relative;
+         left: 0;
+         bottom: 2px;
       }
       a {
          color: #2306d6;

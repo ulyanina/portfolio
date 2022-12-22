@@ -1,0 +1,24 @@
+
+form {
+   & .error {
+      border: 1px solid red;
+   }
+}
+label.error {
+   color: red;
+   width: 203px;
+   border: none;
+   padding: 0 10px;
+   text-align: center;
+}
+input.error{
+
+}
+#policy-error{
+   position: absolute;
+   bottom: 40px;
+   width: 296px;
+}
+// input#policy.error{
+//    border: 1px solid red;
+// }
