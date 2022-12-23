@@ -294,6 +294,17 @@
          line-height: 15px;
       }
    }
+   label.error {
+      width: 212px;
+      font-size: 12px;
+   }
+   #email-error {
+      top: -31px;
+   }
+   #policy-error {
+      width: 254px;
+      left: 20px;
+   }
 }
 
 @media (max-width: 768px) {
@@ -429,9 +440,9 @@
    }
    .prices {
       padding: 0 50px 90px;
-&__divider{
-   margin-bottom: 40px;
-}
+      &__divider {
+         margin-bottom: 40px;
+      }
       &__row {
          grid-template: repeat(2, 44px) / minmax(301px, 367px);
          row-gap: 20px;
@@ -453,6 +464,15 @@
       &__row {
          padding: 0;
       }
+   }
+   #name-error,
+   #email-error {
+      top: -31px;
+      width: 164px;
+   }
+   #policy-error {
+      width: 176px;
+      top: -12px;
    }
 }
 
@@ -603,8 +623,26 @@
          max-width: 219px;
       }
    }
+   #name-error {
+      width: 197px;
+   }
+   #email-error {
+      width: 197px;
+   }
+   #policy-error {
+      width: 265px;
+      top: 0px;
+   }
 }
-
+@media (max-width: 470px) {
+   #email-error {
+      width: 182px;
+   }
+   #policy-error {
+      width: 220px;
+      top: -10px;
+   }
+}
 @media (max-width: 400px) {
    .menu {
       &__list {
@@ -687,6 +725,18 @@
    #email,
    #textarea {
       padding: 10px 12px;
+   }
+   label.error{
+      left: -3px;
+   }
+   #name-error {
+      width: 163px;
+      top: -31px;
+   }
+   #policy-error {
+      width: 295px;
+      top: -32px;
+      left: 0;
    }
 }
 

@@ -4,7 +4,7 @@
    &__row {
       min-height: 600px;
       display: grid;
-      grid-template: minmax(auto, 600px) / minmax(auto, 400px) minmax(auto, 584px);
+      grid-template: minmax(auto, 634px) / minmax(auto, 400px) minmax(auto, 584px);
       justify-content: space-between;
       padding: 0px 35px 0px 52px;
    }
@@ -33,9 +33,12 @@
       margin-bottom: 30px;
    }
    &__phrase {
-      margin-bottom: 20px;
+      margin-bottom: 18px;
       font-weight: 700;
       font-size: 14px;
+      &-form {
+         margin-bottom: 40px;
+      }
    }
    &__social-row {
       display: grid;
@@ -56,7 +59,7 @@
       grid-template-columns: repeat(2, minmax(50px, 280px));
       grid-template-rows: 45px 190px minmax(63px, auto);
       column-gap: 25px;
-      row-gap: 21px;
+      row-gap: 30px;
       margin-bottom: 28px;
    }
    &__input-name,
@@ -71,6 +74,7 @@
          position: absolute;
          left: 20px;
          top: -6px;
+         z-index: 1;
          width: 69px;
          font-size: 12px;
          padding: 0 8px;
@@ -120,7 +124,7 @@
       input {
          margin-right: 10px;
       }
-      span{
+      span {
          position: relative;
          left: 0;
          bottom: 2px;

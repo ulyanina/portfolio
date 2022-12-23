@@ -53,4 +53,4 @@ function validateForms(form) {
 		}
 	});
 }
-validateForms('form');
+validateForms('#contacts__forms-row');

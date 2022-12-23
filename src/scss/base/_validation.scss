@@ -1,22 +1,24 @@
-
 form {
    & .error {
       border: 1px solid red;
+      position: relative;
+      // z-index: 1;
    }
 }
 label.error {
-   color: red;
-   width: 203px;
-   border: none;
-   padding: 0 10px;
-   text-align: center;
-}
-input.error{
-
-}
-#policy-error{
    position: absolute;
-   bottom: 40px;
+   top: -21px;
+   left: 0px;
+   color: red;
+   width: 303px;
+   border: none;
+   font-size: 14px;
+   padding: 0;
+}
+#policy-error {
+   position: absolute;
+   top: -3px;
+   left: 12px;
    width: 296px;
 }
 // input#policy.error{
