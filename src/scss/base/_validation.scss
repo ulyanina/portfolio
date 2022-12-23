@@ -2,7 +2,6 @@ form {
    & .error {
       border: 1px solid red;
       position: relative;
-      // z-index: 1;
    }
 }
 label.error {
@@ -13,6 +12,7 @@ label.error {
    width: 303px;
    border: none;
    font-size: 14px;
+   border-radius: 0;
    padding: 0;
 }
 #policy-error {
@@ -21,6 +21,3 @@ label.error {
    left: 12px;
    width: 296px;
 }
-// input#policy.error{
-//    border: 1px solid red;
-// }

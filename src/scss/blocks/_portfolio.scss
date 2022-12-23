@@ -1,6 +1,7 @@
 .portfolio {
    min-height: 520px;
-   margin-bottom: 80px;
+   padding-top: 40px;
+   padding-bottom: 80px;
    &__suptitle {
       position: relative;
       @include before-circle;
