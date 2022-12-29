@@ -37,22 +37,20 @@
    }
    &__button {
       background: transparent;
-      // background: $color-ice;
+      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
       width: 135px;
       height: 45px;
       border: 0;
    }
-   &__buttons-left {
-      font-weight: 700;
-      font-size: 15px;
-      // color: $color-ice;
-      cursor: pointer;
-   }
+   &__buttons-left,
    &__buttons-right {
       font-weight: 700;
       font-size: 15px;
-      margin-top: 41px;
       cursor: pointer;
+   }
+   &__buttons-right {
+      margin-top: 41px;
+      
    }
    &__img {
       position: absolute;
