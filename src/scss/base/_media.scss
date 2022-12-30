@@ -680,11 +680,18 @@
       }
       &__buttons {
          width: 260px;
+<<<<<<< HEAD
          margin: 0;
       }
 
       &__button-active {
          // margin-right: 0;
+=======
+      }
+
+      &__button-active {
+         //margin-right: 0;
+>>>>>>> 9ecd27ac2236bd3ff41a5995be3cb879e4e9cd2e
          max-width: 125px;
       }
 
