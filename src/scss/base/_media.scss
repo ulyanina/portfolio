@@ -585,6 +585,9 @@
    }
 
    .skills {
+      &__divider {
+         margin-bottom: 35px;
+      }
       &__row {
          grid-template-columns: repeat(1, minmax(240px, 270px));
          grid-template-rows: repeat(5, minmax(270px, auto));
@@ -593,9 +596,6 @@
       &__percentage-row {
          grid-template-columns: repeat(1, minmax(260px, 350px));
          grid-template-rows: repeat(6, minmax(50px, 70px));
-      }
-      &__divider {
-         margin-bottom: 35px;
       }
    }
    .portfolio {
@@ -680,18 +680,11 @@
       }
       &__buttons {
          width: 260px;
-<<<<<<< HEAD
          margin: 0;
       }
 
       &__button-active {
          // margin-right: 0;
-=======
-      }
-
-      &__button-active {
-         //margin-right: 0;
->>>>>>> 9ecd27ac2236bd3ff41a5995be3cb879e4e9cd2e
          max-width: 125px;
       }
 
