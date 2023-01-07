@@ -1,5 +1,6 @@
 const humburger = document.querySelector('.humburger'),
-   menu = document.querySelector('.menu'),
+	menu = document.querySelector('.menu'),
+	menuItem = document.querySelectorAll('.menu__link'),
    closeBtn = document.querySelector('.menu__close');
 
 humburger.addEventListener('click', () => {
@@ -7,6 +8,11 @@ humburger.addEventListener('click', () => {
 });
 closeBtn.addEventListener('click', () => {
    menu.classList.remove('active');
+});
+menuItem.forEach(item => {
+	item.addEventListener('click', () => {
+		menu.classList.remove('active');
+	});
 });
 
 const percent = document.querySelectorAll('.percentage__sup-percent'),
