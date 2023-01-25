@@ -1,3 +1,7 @@
+@import "libs/null";
+@import "libs/fonts";
+@import "base/variables";
+@import "base/mixins";
 body {
    height: 100%;
    font-family: ElMessiri;
@@ -20,9 +24,6 @@ body {
    font-size: 36px;
    margin-bottom: 30px;
 }
-@import "base/variables";
-@import "base/mixins";
-
 .suptitle {
    font-weight: 700;
    font-size: 17px;

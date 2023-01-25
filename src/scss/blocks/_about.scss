@@ -1,13 +1,14 @@
 .about {
-   min-height: 658px;
+   // min-height: 658px;
    // padding: 120px 0px;
-   padding: 40px 10px;
+   // padding: 40px 10px;
+   padding: 60px 10px 80px;
    &__row {
       margin: 0 15px;
       display: grid;
-      grid-template-columns: minmax(200px, 400px) minmax(300px, auto);
-      grid-template-rows: minmax(245px, auto) minmax(160px, auto);
-      grid-auto-rows: minmax(245px, auto);
+      grid-template-columns: minmax(200px, 350px) minmax(300px, auto);
+      grid-template-rows: minmax(245px, auto) minmax(100px, auto);
+      grid-auto-rows: minmax(50px, auto);
       column-gap: 70px;
    }
    &__img {
@@ -55,14 +56,15 @@
    padding-right: 100px;
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   grid-template-rows: repeat(2, 1fr);
+   grid-template-rows: minmax(50px, auto);
+   grid-auto-rows: minmax(50px, auto);
    column-gap: 50px;
    row-gap: 40px;
 }
 .about__skills-item {
    display: grid;
    grid-template-columns: 55px minmax(60px, auto);
-   grid-template-rows: minmax(92px, auto);
+   // grid-template-rows: minmax(92px, auto);
    &-icon {
       position: relative;
       @include before-circle;

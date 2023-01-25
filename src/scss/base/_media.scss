@@ -42,7 +42,7 @@
       padding: 60px 10px 100px;
 
       &__row {
-         column-gap: 50px;
+         column-gap: 45px;
       }
    }
 
@@ -169,9 +169,9 @@
          grid-row: 2/3;
          padding-right: 0;
          grid-template-columns: 1fr;
-         grid-template-rows: repeat(3, minmax(90px, auto));
+         // grid-template-rows: repeat(3, minmax(90px, auto));
          // column-gap: 10px;
-         row-gap: 0;
+         row-gap: 15px;
 
          &-item {
             // padding-left: 10px;
@@ -181,7 +181,6 @@
 
             &-text {
                font-size: calc(13px + 1 * ((100vw - 320px) / (1140 - 320)));
-               margin-bottom: 10px;
             }
          }
       }
@@ -360,7 +359,8 @@
          grid-row: 3/4;
          grid-template-columns: repeat(2, 1fr);
          grid-template-rows: repeat(2, minmax(120px, auto));
-         row-gap: 20px;
+         column-gap: 20px;
+         row-gap: 30px;
 
          &-item {
             &-text {
@@ -542,7 +542,8 @@
 
       &__skills {
          grid-template-columns: minmax(280px, auto);
-         grid-template-rows: repeat(3, minmax(90px, auto));
+         grid-template-rows: repeat(2, minmax(90px, auto));
+         // grid-template-rows: repeat(3, minmax(90px, auto));
       }
 
       .column1 {
