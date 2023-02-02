@@ -60,3 +60,10 @@ function validateForms(form) {
 	});
 }
 validateForms('#contacts__forms-row');
+
+
+const policyAlarm = document.querySelector('.policy');
+
+policyAlarm.addEventListener('click', () => {
+	alert('На сегодняшний день данные не собираются!');
+});
